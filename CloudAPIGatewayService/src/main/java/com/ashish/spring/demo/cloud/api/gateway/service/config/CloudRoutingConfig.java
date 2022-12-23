@@ -12,7 +12,7 @@ public class CloudRoutingConfig {
 	public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes().route(
                 r-> r.path("/product-enquiry/**")
-                .uri("http://localhost:9004/")               
+                .uri("http://enquiry-service:9004/")               
         ).build();
     }
 
